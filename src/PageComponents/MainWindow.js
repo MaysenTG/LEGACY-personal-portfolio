@@ -20,35 +20,35 @@ const StyledLink = styled(Link)`
 
 function MainWindow() {
         return (
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
             <header>
                 <ul class="main-navigation">
-                    <li><StyledLink to={process.env.PUBLIC_URL+"/home"}>Home</StyledLink></li>
-                    <li><StyledLink to={process.env.PUBLIC_URL+"/my-projects"}>Projects</StyledLink></li>
-                    <li><StyledLink to={process.env.PUBLIC_URL+"/contact-me"}>Contact</StyledLink></li>
+                    <li><StyledLink to="/home">Home</StyledLink></li>
+                    <li><StyledLink to="/my-projects">Projects</StyledLink></li>
+                    <li><StyledLink to="/contact-me">Contact</StyledLink></li>
                 </ul>
     
                 <div class="dropdown">
                     <button class="dropbtn">Navigation</button>
                     <div class="dropdown-content">
-                        <a><StyledLink to={process.env.PUBLIC_URL+"/home"}>Home</StyledLink></a>
-                        <a><StyledLink to={process.env.PUBLIC_URL+"/my-projects"}>My Projects</StyledLink></a>
-                        <a><StyledLink to={process.env.PUBLIC_URL+"/contact-me"}>Contact</StyledLink></a>
+                        <a><StyledLink to="/home">Home</StyledLink></a>
+                        <a><StyledLink to="/my-projects">My Projects</StyledLink></a>
+                        <a><StyledLink to="/contact-me">Contact</StyledLink></a>
                     </div>
                 </div>
             </header>    
             
             <Switch>
-                <Route exact path={process.env.PUBLIC_URL+"/"}>
-                    <Redirect to={process.env.PUBLIC_URL+"/home"}/>
+                <Route exact path="/">
+                    <Redirect to="/home"/>
                 </Route>
-                <Route path={process.env.PUBLIC_URL+"/home"}>
+                <Route path="/home">
                     <IndexPage />
                 </Route>
-                <Route path={process.env.PUBLIC_URL+"/my-projects"}>
+                <Route path="/my-projects">
                     <MyProjects />
                 </Route>
-                <Route path={process.env.PUBLIC_URL+"/contact-me"}>
+                <Route path="/contact-me">
                     <ContactMe />
                 </Route>
             </Switch>
