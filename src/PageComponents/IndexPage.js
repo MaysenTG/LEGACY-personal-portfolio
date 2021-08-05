@@ -1,10 +1,7 @@
 import portrait from '../media/self-portrait.jpeg';
-import MyProjects from './my-projects';
+
 import React from 'react';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 import styled from "styled-components";
@@ -17,8 +14,7 @@ const StyledLink = styled(Link)`
 
 function IndexPage() {
   return (
-    <Router>
-      <main id="index-main">
+    <main id="index-main">
         <div className="heading-info main-index">
           <div id="main-text">
             <h1>Maysen Greenwood</h1>
@@ -27,17 +23,7 @@ function IndexPage() {
           </div>
           <img src={portrait} alt="self portrait of Maysen Greenwood" />
         </div>
-      </main>
-    
-      <Switch>
-        <Route exact path="/">
-          <IndexPage />
-        </Route>
-        <Route path="/my-projects">
-          <MyProjects />
-        </Route>
-      </Switch>
-    </Router>
+    </main>
   );
 }
 
