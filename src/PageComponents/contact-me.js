@@ -16,7 +16,7 @@ function ContactMe() {
                   <textarea id="message" name="entry.1506473067" placeholder="Write something.." required defaultValue={""} />
                   <button id="submit-btn" type="submit" value="Submit">Submit</button>
                 </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style={{display: 'none'}} />
+                <iframe title="block for contact us form" name="hidden_iframe" id="hidden_iframe" style={{display: 'none'}} />
                 {/* Popup after form submission */}
                 <div id="myModal" className="modal">
                   {/* Modal content */}

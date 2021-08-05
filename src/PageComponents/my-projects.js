@@ -27,7 +27,7 @@ function MyProjects() {
           <h2 className="project-heading automation">Automation Programs</h2>
           <div id="project-3" className="project-container">
             <h3>Supermarket Price Finder</h3>
-            <a href="https://github.com/MaysenTG/supermarketProductPriceFinder" target="_blank" rel="noreferrer"><img src="media/coding-photo-price-finder.webp" className="project-image" alt="supermarket price finder program"/></a>
+            <a href="https://github.com/MaysenTG/supermarketProductPriceFinder" target="_blank" rel="noreferrer"><img src="" className="project-image" alt="supermarket price finder program"/></a>
             <h2>Skills used</h2>
             <ul>
               <li>Python</li>
