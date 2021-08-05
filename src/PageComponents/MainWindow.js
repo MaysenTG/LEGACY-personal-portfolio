@@ -8,7 +8,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    Redirect
 } from "react-router-dom";
 
 const StyledLink = styled(Link)`
@@ -39,7 +40,7 @@ function MainWindow() {
             
             <Switch>
                 <Route exact path="/">
-                    <IndexPage />
+                    <Redirect to="/home"/>
                 </Route>
                 <Route path="/home">
                     <IndexPage />
