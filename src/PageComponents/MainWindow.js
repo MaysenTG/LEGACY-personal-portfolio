@@ -9,7 +9,8 @@ import {
     Switch,
     Route,
     Link,
-    Redirect
+    Redirect,
+    HashRouter
 } from "react-router-dom";
 
 const StyledLink = styled(Link)`
@@ -20,7 +21,7 @@ const StyledLink = styled(Link)`
 
 function MainWindow() {
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <HashRouter basename={process.env.PUBLIC_URL}>
             <header>
                 <ul class="main-navigation">
                     <li><StyledLink to="/home">Home</StyledLink></li>
@@ -52,7 +53,7 @@ function MainWindow() {
                     <ContactMe />
                 </Route>
             </Switch>
-        </Router>
+        </HashRouter>
         
     );
 }
