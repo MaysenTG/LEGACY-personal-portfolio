@@ -19,7 +19,7 @@ function IndexPage() {
           <div id="main-text">
             <h1>Maysen Greenwood</h1>
             <h3>Fullstack Developer</h3>
-            <button id="view-projects"><StyledLink to="/my-projects">View my projects</StyledLink></button>
+            <button id="view-projects"><StyledLink to={process.env.PUBLIC_URL+"/my-projects"}>View my projects</StyledLink></button>
           </div>
           <img src={portrait} alt="self portrait of Maysen Greenwood" />
         </div>
