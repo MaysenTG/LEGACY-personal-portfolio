@@ -21,7 +21,7 @@ const StyledLink = styled(Link)`
 
 function MainWindow() {
         return (
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter>
             <header>
                 <ul class="main-navigation">
                     <li><StyledLink to="/home">Home</StyledLink></li>
