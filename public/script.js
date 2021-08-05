@@ -1,11 +1,6 @@
 var modal = document.getElementById("modal");
 
 // When the user clicks on <span> (x), close the popup
-$(document).ready(function(){
-  $(".close").click(function(){
-    $(".modal").hide();
-  });
-});
 
 document.getElementsByClassName("close").onclick(function() {
   modal.style.display = "none";
