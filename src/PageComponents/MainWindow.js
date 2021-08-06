@@ -21,7 +21,7 @@ const StyledLink = styled(Link)`
 
 function MainWindow() {
         return (
-            <HashRouter>
+            <Router>
             <header>
                 <ul class="main-navigation">
                     <li><StyledLink to="/home">Home</StyledLink></li>
@@ -53,7 +53,7 @@ function MainWindow() {
                     <ContactMe />
                 </Route>
             </Switch>
-        </HashRouter>
+        </Router>
         
     );
 }
