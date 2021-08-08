@@ -10,7 +10,6 @@ import {
     Route,
     Link,
     Redirect,
-    HashRouter
 } from "react-router-dom";
 
 const StyledLink = styled(Link)`
