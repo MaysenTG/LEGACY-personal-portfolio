@@ -73,9 +73,6 @@ main {
   margin: 2rem 0 2rem 0;
   text-align: center;
   font-size: 2rem;
-}
-
-.automation {
   color: #304e7e;
 }
 
@@ -97,6 +94,10 @@ main {
   justify-content: space-evenly;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.project-container ul {
+  height: 6rem;
 }
 
 #contact-info {
