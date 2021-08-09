@@ -1,3 +1,5 @@
+import openModal from '../script.js';
+
 function ContactMe() {
     return (
         <main>
@@ -7,7 +9,7 @@ function ContactMe() {
             </div>
             <div className="contact-options">
               <div className="container">
-                <form name="gform" id="gform" encType="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfuRb0r1KOPwnuY3gdxVua4IwUHhNCjiSdUf9AD9FrUyQaicw/formResponse?" target="hidden_iframe">
+                <form name="gform" id="gform" encType="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfuRb0r1KOPwnuY3gdxVua4IwUHhNCjiSdUf9AD9FrUyQaicw/formResponse?" target="hidden_iframe" onSubmit={openModal}>
                   <label htmlFor="name">Full Name</label>
                   <input type="text" id="name" name="entry.946826032" placeholder="Your name.." required />
                   <label htmlFor="email">Email Address</label>
