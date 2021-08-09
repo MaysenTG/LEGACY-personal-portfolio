@@ -1,5 +1,5 @@
-import clearForm from '../script.js';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import clearForm from '../script';
 
 function ContactModal({setVisible}, {visible}) {
     clearForm();
@@ -8,7 +8,7 @@ function ContactModal({setVisible}, {visible}) {
     
     // Set visibility of modal to false
     const checkIfClickedOutside = e => {
-        if (!ref.current.contains(e.target)) {
+        if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
             setVisible(false)
         }
     }

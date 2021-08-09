@@ -1,5 +1,6 @@
+import React, { useState } from 'react';
 import ContactModal from './formModal';
-import { useState } from 'react';
+
 
 function ContactMe() {
   const [visible, setVisible] = useState(false);
@@ -24,10 +25,9 @@ function ContactMe() {
               </div>
             </div>
           </div>
-          {visible && <ContactModal setVisible={setVisible} visible={visible}/>}
+          {visible && <ContactModal setVisible={setVisible} />}
         </main>
     )
 }
-
 
 export default ContactMe;
