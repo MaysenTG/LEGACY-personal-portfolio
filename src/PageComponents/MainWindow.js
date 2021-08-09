@@ -22,15 +22,15 @@ function MainWindow() {
         return (
             <Router basename={process.env.PUBLIC_URL}>
             <header>
-                <ul class="main-navigation">
+                <ul className="main-navigation">
                     <li><StyledLink to="/home">Home</StyledLink></li>
                     <li><StyledLink to="/my-projects">Projects</StyledLink></li>
                     <li><StyledLink to="/contact-me">Contact</StyledLink></li>
                 </ul>
     
-                <div class="dropdown">
-                    <button class="dropbtn">Navigation</button>
-                    <div class="dropdown-content">
+                <div className="dropdown">
+                    <button className="dropbtn">Navigation</button>
+                    <div className="dropdown-content">
                         <a><StyledLink to="/home">Home</StyledLink></a>
                         <a><StyledLink to="/my-projects">My Projects</StyledLink></a>
                         <a><StyledLink to="/contact-me">Contact</StyledLink></a>
