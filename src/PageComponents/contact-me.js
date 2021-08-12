@@ -26,7 +26,6 @@ function ContactMe() {
               </div>
             </div>
           </div>
-          <button onClick={() => setVisible(true)}>Show modal</button>
           <FormModal show={visible} onHide={() => setVisible(false)} />
         </main>
       </>
