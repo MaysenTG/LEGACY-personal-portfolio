@@ -38,7 +38,7 @@ function MainWindow() {
                     <Dropdown.Menu>
                         <Dropdown.Item as={StyledLink} to="/home">Home</Dropdown.Item>
                         <Dropdown.Item as={StyledLink} to="/my-projects">My Projects</Dropdown.Item>
-                        <Dropdown.Item as={StyledLink} to="/contact-me">Something else</Dropdown.Item>
+                        <Dropdown.Item as={StyledLink} to="/contact-me">Contact Me</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 
