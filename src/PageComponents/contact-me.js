@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MyModal from './Modal';
+import FormModal from './Modal';
 import '../index';
 
 function ContactMe() {
@@ -26,9 +26,8 @@ function ContactMe() {
               </div>
             </div>
           </div>
-          
           <button onClick={() => setVisible(true)}>Show modal</button>
-          <MyModal show={visible} onHide={() => setVisible(false)} />
+          <FormModal show={visible} onHide={() => setVisible(false)} />
         </main>
       </>
     )
