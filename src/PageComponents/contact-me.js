@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import ContactModal from './formModal';
-
+import MyModal from './Modal';
+import '../index';
 
 function ContactMe() {
   const [visible, setVisible] = useState(false);
     return (
+      <>
         <main>
           <div className="heading-info" id="contact-info">
             <div className="main-text" id="contact-text">
@@ -25,9 +26,13 @@ function ContactMe() {
               </div>
             </div>
           </div>
-          {visible && <ContactModal setVisible={setVisible} />}
+          
+          <button onClick={() => setVisible(true)}>Show modal</button>
+          <MyModal show={visible} onHide={() => setVisible(false)} />
         </main>
+      </>
     )
 }
+
 
 export default ContactMe;
