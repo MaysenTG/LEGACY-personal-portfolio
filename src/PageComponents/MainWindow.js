@@ -12,6 +12,8 @@ import {
     Redirect,
 } from "react-router-dom";
 
+import Dropdown from 'react-bootstrap/Dropdown';
+
 const StyledLink = styled(Link)`
   border: none;
   width: inherit;
@@ -28,14 +30,18 @@ function MainWindow() {
                     <li><StyledLink to="/contact-me">Contact</StyledLink></li>
                 </ul>
     
-                <div className="dropdown">
-                    <button className="dropbtn">Navigation</button>
-                    <div className="dropdown-content">
-                        <a><StyledLink to="/home">Home</StyledLink></a>
-                        <a><StyledLink to="/my-projects">My Projects</StyledLink></a>
-                        <a><StyledLink to="/contact-me">Contact</StyledLink></a>
-                    </div>
-                </div>
+                
+                <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                        Navigation
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item as={StyledLink} to="/home">Home</Dropdown.Item>
+                        <Dropdown.Item as={StyledLink} to="/my-projects">My Projects</Dropdown.Item>
+                        <Dropdown.Item as={StyledLink} to="/contact-me">Something else</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                
             </header>    
             
             <Switch>

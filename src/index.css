@@ -153,17 +153,19 @@ main {
 .main-navigation li {
   list-style-type: none;
   margin: 0 10px 0 10px;
-}
-.main-navigation li:hover {
-  background-color: #77c7ff;
-}
-
-.main-navigation li {
   text-decoration: none;
   border: 1px solid white;
   padding: 8px;
   background-color: #90d1ff;
   border: 2px solid #304e7e;
+}
+.main-navigation li:hover {
+  background-color: #77c7ff;
+}
+
+li,
+a {
+  color: black !important;
 }
 
 #view-projects {
@@ -182,57 +184,23 @@ main {
   background-color: #77c7ff;
 }
 
-/* Dropdown for navigation */
-.dropbtn {
-  background-color: #90d1ff;
-  border: 2px solid #304e7e;
-  padding: 16px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
+/* Bootstrap Dropdown */
 .dropdown {
   top: 25%;
-  position: relative;
   display: none;
   justify-self: flex-end;
-  grid-area: 1 / 2 / 1 / span 2;
-  margin-right: 10rem;
-  justify-content: center;
-  width: 0%;
+  margin-right: 2rem;
+  border-radius: 0 !important;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
+#dropdown-basic {
+  background-color: #90d1ff;
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  border-radius: 0;
+  border: 2px solid #304e7e;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+#dropdown-basic:hover {
   background-color: #77c7ff;
 }
 
