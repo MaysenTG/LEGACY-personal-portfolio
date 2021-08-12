@@ -101,7 +101,7 @@ main {
 }
 
 .mb-3 {
-  margin-top: 2rem;
+  margin: 2rem 5rem 0 5rem;
 }
 
 #contact-info {
@@ -313,6 +313,11 @@ input[type="submit"]:hover {
 
   #main-text {
     margin: 0;
+  }
+
+  .mb-3 {
+    margin: 0;
+    margin-top: 2rem;
   }
 }
 
