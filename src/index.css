@@ -209,17 +209,24 @@ a {
   background-color: #77c7ff;
 }
 
+#dropdown-basic:focus {
+  outline: none;
+}
+
+#dropdown-basic:active {
+  outline: none;
+}
+
 /* Styles for contact us form*/
 input[type="text"],
 select,
 textarea {
-  width: 100%;
+  width: 80%;
   padding: 12px;
   border: 1px solid #304e7e;
   margin-top: 6px;
   margin-bottom: 35px;
-  resize: vertical;
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 textarea {
@@ -250,7 +257,7 @@ input[type="submit"]:hover {
 .container {
   width: 30rem !important;
   background-color: #f2f2f2;
-  padding: 60px;
+  padding: 40px;
   margin: 0 auto;
 }
 
@@ -269,7 +276,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media only screen and (max-width: 952px) {
+@media only screen and (max-width: 980px) {
   #contact-info {
     margin-top: -4rem;
   }
@@ -289,7 +296,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media only screen and (max-width: 755px) {
+@media only screen and (max-width: 606px) {
   #index-main {
     margin: 1rem !important;
   }
@@ -328,7 +335,7 @@ input[type="submit"]:hover {
   }
 
   .container {
-    width: 20rem !important;
+    width: 25rem !important;
     background-color: #f2f2f2;
     padding: 20px;
     margin: 0 auto;
