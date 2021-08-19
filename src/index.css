@@ -210,11 +210,7 @@ a {
 }
 
 #dropdown-basic:focus {
-  outline: none;
-}
-
-#dropdown-basic:active {
-  outline: none;
+  box-shadow: none;
 }
 
 /* Styles for contact us form*/
