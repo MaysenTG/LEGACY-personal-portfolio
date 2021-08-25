@@ -7,7 +7,7 @@ function ContactMe() {
     return (
       <>
         <main>
-          <div className="heading-info" id="contact-info">
+          <div id="contact-info">
             <div className="main-text" id="contact-text">
               <h1>Get in touch!</h1>
             </div>

@@ -41,7 +41,6 @@ function MainWindow() {
                         <Dropdown.Item as={StyledLink} to="/contact-me">Contact Me</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                
             </header>    
             
             <Switch>
