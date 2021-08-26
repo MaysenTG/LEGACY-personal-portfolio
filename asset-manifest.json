@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.15332681.chunk.css",
-    "main.js": "/personal-portfolio/static/js/main.7df84583.chunk.js",
-    "main.js.map": "/personal-portfolio/static/js/main.7df84583.chunk.js.map",
+    "main.css": "/personal-portfolio/static/css/main.49ef6840.chunk.css",
+    "main.js": "/personal-portfolio/static/js/main.fefc3969.chunk.js",
+    "main.js.map": "/personal-portfolio/static/js/main.fefc3969.chunk.js.map",
     "runtime-main.js": "/personal-portfolio/static/js/runtime-main.6dff30a6.js",
     "runtime-main.js.map": "/personal-portfolio/static/js/runtime-main.6dff30a6.js.map",
     "static/css/2.da1eef19.chunk.css": "/personal-portfolio/static/css/2.da1eef19.chunk.css",
-    "static/js/2.9c9f6dc8.chunk.js": "/personal-portfolio/static/js/2.9c9f6dc8.chunk.js",
-    "static/js/2.9c9f6dc8.chunk.js.map": "/personal-portfolio/static/js/2.9c9f6dc8.chunk.js.map",
+    "static/js/2.0999b3e9.chunk.js": "/personal-portfolio/static/js/2.0999b3e9.chunk.js",
+    "static/js/2.0999b3e9.chunk.js.map": "/personal-portfolio/static/js/2.0999b3e9.chunk.js.map",
     "index.html": "/personal-portfolio/index.html",
     "static/css/2.da1eef19.chunk.css.map": "/personal-portfolio/static/css/2.da1eef19.chunk.css.map",
-    "static/css/main.15332681.chunk.css.map": "/personal-portfolio/static/css/main.15332681.chunk.css.map",
-    "static/js/2.9c9f6dc8.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.9c9f6dc8.chunk.js.LICENSE.txt",
+    "static/css/main.49ef6840.chunk.css.map": "/personal-portfolio/static/css/main.49ef6840.chunk.css.map",
+    "static/js/2.0999b3e9.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.0999b3e9.chunk.js.LICENSE.txt",
     "static/media/VC-experience-website.5ff85a63.jpg": "/personal-portfolio/static/media/VC-experience-website.5ff85a63.jpg",
     "static/media/coding-photo-price-finder.c62e875c.webp": "/personal-portfolio/static/media/coding-photo-price-finder.c62e875c.webp",
     "static/media/compound interest app.58b3c46f.png": "/personal-portfolio/static/media/compound interest app.58b3c46f.png",
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.6dff30a6.js",
     "static/css/2.da1eef19.chunk.css",
-    "static/js/2.9c9f6dc8.chunk.js",
-    "static/css/main.15332681.chunk.css",
-    "static/js/main.7df84583.chunk.js"
+    "static/js/2.0999b3e9.chunk.js",
+    "static/css/main.49ef6840.chunk.css",
+    "static/js/main.fefc3969.chunk.js"
   ]
 }
