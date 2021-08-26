@@ -42,7 +42,7 @@ header {
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 10rem;
   justify-content: center;
   width: inherit;
 }
@@ -99,18 +99,28 @@ main {
 .project-container ul {
   height: 6rem;
 }
-/* End of CSS Rules for projects page */
 
 .mb-3 {
   margin: 2rem 5rem 0 5rem;
+}
+
+#contact-info {
+  display: flex;
+  margin-top: 8rem;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#contact-options {
+  margin-left: 5ch;
 }
 
 #contact-text {
   margin-top: 5rem;
 }
 
-.heading-info,
-#contact-info {
+.heading-info {
   text-align: center;
   font-size: 24px;
   display: inline-flex;
@@ -118,13 +128,6 @@ main {
   margin-top: 5rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-#contact-info {
-  display: flex;
-  margin-top: 5rem;
-  width: 86%;
-  margin: 0 auto;
 }
 
 .main-text {
@@ -248,9 +251,9 @@ input[type="submit"]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-  width: 25rem !important;
+  width: 30rem !important;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 40px;
   margin: 0 auto;
 }
 
@@ -269,6 +272,16 @@ input[type="submit"]:hover {
   }
 }
 
+@media only screen and (max-width: 980px) {
+  #contact-info {
+    margin-top: -4rem;
+  }
+
+  #contact-text {
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .dropdown {
     display: inline-block;
@@ -279,23 +292,26 @@ input[type="submit"]:hover {
   }
 }
 
+@media only screen and (max-width: 606px) {
+  #index-main {
+    margin: 1rem !important;
+  }
+}
+
 @media only screen and (max-width: 715px) {
-  .heading-info {
+  #heading-info {
     flex-direction: column;
     margin-top: -4rem;
     width: 100%;
   }
-  
-  #contact-info {
-    margin-top: -8rem;
-  }
 
-  .heading-info img {
-    margin: 0.5rem 0 0 0 !important;
+  #heading-info img {
+    margin: 2rem 0 0 0 !important;
   }
 
   main {
     margin-left: 0;
+    margin-top: 10rem;
   }
 
   #main-text {
@@ -320,9 +336,5 @@ input[type="submit"]:hover {
     padding: 20px;
     margin: 0 auto;
     border: 1px solid #304e7e;
-  }
-
-  #index-main {
-    margin: 1rem !important;
   }
 }

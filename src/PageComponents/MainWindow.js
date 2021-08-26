@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import IndexPage from './IndexPage';
 import MyProjects from './my-projects';
@@ -10,6 +10,7 @@ import {
     Route,
     Link,
     Redirect,
+    useLocation
 } from "react-router-dom";
 
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -21,6 +22,7 @@ const StyledLink = styled(Link)`
 `;
 
 function MainWindow() {
+    const [navName, setNavname] = useState("Navigation");
         return (
             <Router basename={process.env.PUBLIC_URL}>
             <header>
@@ -33,12 +35,12 @@ function MainWindow() {
                 
                 <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Navigation
+                        {navName}
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                        <Dropdown.Item as={StyledLink} to="/home">Home</Dropdown.Item>
-                        <Dropdown.Item as={StyledLink} to="/my-projects">My Projects</Dropdown.Item>
-                        <Dropdown.Item as={StyledLink} to="/contact-me">Contact Me</Dropdown.Item>
+                        <Dropdown.Item as={StyledLink} to="/home" onClick={() => setNavname("Home")}>Home</Dropdown.Item>
+                        <Dropdown.Item as={StyledLink} to="/my-projects" onClick={() => setNavname("My Projects")}>My Projects</Dropdown.Item>
+                        <Dropdown.Item as={StyledLink} to="/contact-me" onClick={() => setNavname("Contact Me")}>Contact Me</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </header>    
