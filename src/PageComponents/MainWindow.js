@@ -55,6 +55,8 @@ function MainWindow() {
                     <MyProjects />
                 </Route>
                 <Route path="/contact-me">
+                    
+                    We're working on fixing the contact us page!
                     <ContactMe />
                 </Route>
             </Switch>
