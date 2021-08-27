@@ -5,8 +5,13 @@ import MyWebsites from './Projects/websites';
 import MyAutomation from './Projects/automation';
 import MyAppProjects from './Projects/app-projects';
 
+import 'overlayscrollbars/css/OverlayScrollbars.css';
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
+
+
 function MyProjects() {
     return (
+      <OverlayScrollbarsComponent>
           <Tabs fill defaultActiveKey="websites" id="projects-tab" className="mb-3">
             <Tabs.Tab eventKey="websites" title="Websites">
               <MyWebsites />
@@ -18,6 +23,7 @@ function MyProjects() {
               <MyAppProjects />
             </Tabs.Tab>
           </Tabs>
+      </OverlayScrollbarsComponent>
     )
 }
 
