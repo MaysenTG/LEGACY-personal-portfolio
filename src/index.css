@@ -67,7 +67,7 @@ header {
 main {
   margin-top: 10rem;
   justify-content: center;
-  width: inherit;
+  display: flex;
 }
 
 /*New Projects Page Styles*/
@@ -177,16 +177,16 @@ main {
   color: #fff;
 }
 
-.mb-3 {
-  margin: 2rem 5rem 0 5rem;
-}
-
 #contact-info {
   display: flex;
   margin-top: 8rem;
   flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
+}
+
+.mb-3 {
+  margin: 2rem 3rem;
 }
 
 #contact-options {
@@ -291,52 +291,22 @@ a {
   box-shadow: none;
 }
 
-/* Styles for contact us form*/
-input[type="text"],
-select,
-textarea {
-  width: 80%;
-  padding: 12px;
-  border: 1px solid #304e7e;
-  margin-top: 6px;
-  margin-bottom: 35px;
-  font-size: 1rem !important;
-}
-
-textarea {
-  height: 5rem;
-  max-height: 8rem;
-  min-height: 4rem;
-}
-
-#submit-btn {
-  background-color: #90d1ff;
-  border: 2px solid #304e7e;
-  color: black;
-  padding: 12px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-#submit-btn:hover {
-  background-color: #77c7ff;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #77c7ff;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  width: 30rem !important;
+.contact__form {
+  border: 1px solid black !important;
+  width: 30rem;
   background-color: #f2f2f2;
-  padding: 40px;
-  margin: 0 auto;
+  margin-top: -5rem;
+  margin-left: 10rem;
 }
 
-.skills-text {
-  text-decoration: none !important;
+.form__button {
+  margin: 1rem !important;
+  justify-self: center;
+}
+
+.contact__page {
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -350,13 +320,18 @@ input[type="submit"]:hover {
   }
 }
 
-@media only screen and (max-width: 980px) {
-  #contact-info {
-    margin-top: -4rem;
+@media only screen and (max-width: 880px) {
+  .contact__page {
+    flex-direction: column;
+    margin-top: -5rem;
   }
 
-  #contact-text {
-    margin: 0 auto;
+  .contact__form {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  #contact__title {
+    text-align: center;
   }
 }
 
@@ -367,12 +342,6 @@ input[type="submit"]:hover {
 
   .main-navigation {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 606px) {
-  #index-main {
-    margin: 1rem !important;
   }
 }
 
@@ -395,19 +364,20 @@ input[type="submit"]:hover {
   #main-text {
     margin: 0;
   }
+}
 
-  .mb-3 {
-    margin: 0;
-    margin-top: 2rem;
+@media only screen and (max-width: 606px) {
+  #index-main {
+    margin: 1rem !important;
+  }
+
+  .contact__form {
+    width: 25rem;
   }
 }
 
-@media only screen and (max-width: 510px) {
-  .container {
-    width: 25rem !important;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 0 auto;
-    border: 1px solid #304e7e;
+@media only screen and (max-width: 400px) {
+  .contact__form {
+    width: 20rem;
   }
 }
