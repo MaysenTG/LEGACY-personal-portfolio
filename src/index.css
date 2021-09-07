@@ -292,16 +292,20 @@ a {
 }
 
 .contact__form {
-  border: 1px solid black !important;
   width: 30rem;
   background-color: #f2f2f2;
   margin-top: -5rem;
   margin-left: 10rem;
+  border: 2px solid #304e7e;
 }
 
 .form__button {
   margin: 1rem !important;
   justify-self: center;
+  color: black !important;
+  border-radius: 0 !important;
+  background-color: #90d1ff !important;
+  border: 2px solid #304e7e !important;
 }
 
 .contact__page {
