@@ -8,6 +8,7 @@ import MyAppProjects from './Projects/app-projects';
 
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
+import 'overlayscrollbars';
 
 
 function MyProjects() {

@@ -3,18 +3,33 @@ import '../../index';
 
 function MyAutomation() {
   return (
-      <div id="projects-main">
-          <h2 className="project-heading automation">Automation Programs</h2>
-          <div id="project-3" className="project-container">
-            <h3>Supermarket Price Finder</h3>
-            <a href="https://github.com/MaysenTG/supermarketProductPriceFinder" target="_blank" rel="noreferrer"><img src={SprMktPrice} className="project-image" alt="supermarket price finder program"/></a>
-            <h2>Skills used</h2>
-            <ul>
-              <li>Python</li>
-              <li>Selenium</li>
-            </ul>
-          </div>
-      </div>
+      <section id="projects">
+            <div class="projects__container">
+                <div class="row">
+                    <h1 class="section__title">Automation Programs</h1>
+                    <ul class="project__list">
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src={SprMktPrice} class="project__img" alt="Supermarket price finder. Python/selenium web scraper for a Online Shopping platform"/>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">The VC Experience</h3>
+                                    <h4 class="project__description--sub-title">Selenium, Python, Apple Script</h4>
+                                    <p class="project__description--para">
+                                    This project scrapes the Countdown Online Shopping website using the Google Chrome web driver in headless mode. The program finds the price of a mince and cheese pie and returns the price.
+                                    If enabled, the program can also send an iMessage to an iPhone user after it finds the price.
+                                    </p>
+                                    <div class="project__description--links">
+                                    <a href="https://github.com/MaysenTG/supermarketProductPriceFinder" rel="noreferrer" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github-white"></i>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
   );
 }
 
