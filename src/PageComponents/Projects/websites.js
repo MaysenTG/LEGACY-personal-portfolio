@@ -21,10 +21,10 @@ function MyWebsites() {
                                     </p>
                                     <div class="project__description--links">
                                     <a href="https://github.com/MaysenTG/TemplateBusinessSite" rel="noreferrer" target="_blank" class="project__description--link">
-                                        <i class="fab fa-github"></i>
+                                        <i class="icon fa-github"></i>
                                     </a>
                                     <a href="https://maysentg.github.io/TemplateBusinessSite/" rel="noreferrer" target="_blank" class="project__description--link">
-                                        <i class="fas fa-web"></i>
+                                        <i class="icon fa-web"></i>
                                     </a>
                                     </div>
                                 </div>
@@ -43,10 +43,10 @@ function MyWebsites() {
                                     </p>
                                     <div class="project__description--links">
                                     <a href="https://github.com/MaysenTG/TheTeaCozy" rel="noreferrer" target="_blank" class="project__description--link">
-                                        <i class="fab fa-github-white"></i>
+                                        <i class="icon fa-github-white"></i>
                                     </a>
                                     <a href="https://maysentg.github.io/TheTeaCozy/" rel="noreferrer" target="_blank" class="project__description--link">
-                                        <i class="fas fa-web-white"></i>
+                                        <i class="icon fa-web-white"></i>
                                     </a>
                                     </div>
                                 </div>

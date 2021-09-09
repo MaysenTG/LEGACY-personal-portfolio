@@ -19,10 +19,10 @@ function MyAppProjects() {
                               </p>
                               <div class="project__description--links">
                               <a href="https://github.com/MaysenTG/Compound-Growth-JS-App" rel="noreferrer" target="_blank" class="project__description--link">
-                                  <i class="fab fa-github-white"></i>
+                                  <i class="icon fa-github-white"></i>
                               </a>
                               <a href="https://maysentg.github.io/Compound-Growth-JS-App/" rel="noreferrer" target="_blank" class="project__description--link">
-                                  <i class="fas fa-web-white"></i>
+                                  <i class="icon fa-web-white"></i>
                               </a>
                               </div>
                           </div>
@@ -39,10 +39,10 @@ function MyAppProjects() {
                               </p>
                               <div class="project__description--links">
                               <a href="https://github.com/MaysenTG/live-web-code-editor" rel="noreferrer" target="_blank" class="project__description--link">
-                                  <i class="fab fa-github-white"></i>
+                                  <i class="icon fa-github-white"></i>
                               </a>
                               <a href="https://maysentg.github.io/live-web-code-editor/" rel="noreferrer" target="_blank" class="project__description--link">
-                                  <i class="fas fa-web-white"></i>
+                                  <i class="icon fa-web-white"></i>
                               </a>
                               </div>
                           </div>

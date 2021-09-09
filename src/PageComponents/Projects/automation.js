@@ -20,7 +20,7 @@ function MyAutomation() {
                                     </p>
                                     <div class="project__description--links">
                                     <a href="https://github.com/MaysenTG/supermarketProductPriceFinder" rel="noreferrer" target="_blank" class="project__description--link">
-                                        <i class="fab fa-github-white"></i>
+                                        <i class="icon fa-github-white"></i>
                                     </a>
                                     </div>
                                 </div>
