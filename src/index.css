@@ -161,7 +161,7 @@ main {
 }
 
 .project__description--para {
-  margin: 16px 0;
+  margin: 14px 0;
 }
 
 .project__description--link {
@@ -370,7 +370,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 606px) {
+@media only screen and (max-width: 530px) {
   #index-main {
     margin: 1rem !important;
   }
@@ -386,15 +386,34 @@ a {
     font-size: 0.8rem;
   }
   .project__description--para {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .icon {
     height: 1.4rem;
   }
+  .project__description {
+    left: 30px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
   .contact__form {
     width: 20rem !important;
+  }
+  .contact__form {
+    width: 25rem;
+  }
+
+  .project__description--title {
+    font-size: 1.2rem;
+  }
+  .project__description--sub-title {
+    font-size: 0.6rem;
+  }
+  .project__description--para {
+    font-size: 0.6rem;
+  }
+  .icon {
+    height: 1.4rem;
   }
 }
