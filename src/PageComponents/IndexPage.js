@@ -1,4 +1,4 @@
-import portrait from '../media/self-portrait.jpeg';
+import portrait from '../media/self-portrait.webp';
 
 import React from 'react';
 import {
