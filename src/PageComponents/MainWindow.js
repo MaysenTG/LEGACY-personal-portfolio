@@ -23,7 +23,7 @@ const StyledLink = styled(Link)`
 function MainWindow() {
     const [navName, setNavname] = useState("Navigation");
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router>
             <header>
                 <ul className="main-navigation">
                     <li><StyledLink to="/home">Home</StyledLink></li>
@@ -48,7 +48,7 @@ function MainWindow() {
                 <Route exact path="/">
                     <Redirect to="/home"/>
                 </Route>
-                <Route path="/home">
+                <Route exact path="/home">
                     <IndexPage />
                 </Route>
                 <Route path="/my-projects">
