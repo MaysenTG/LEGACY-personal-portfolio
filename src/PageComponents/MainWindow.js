@@ -26,7 +26,7 @@ function MainWindow() {
             <Router>
             <header>
                 <ul className="main-navigation">
-                    <li><StyledLink to="/home">Home</StyledLink></li>
+                    <li><StyledLink to="/">Home</StyledLink></li>
                     <li><StyledLink to="/my-projects">Projects</StyledLink></li>
                     <li><StyledLink to="/contact-me">Contact</StyledLink></li>
                 </ul>
@@ -37,7 +37,7 @@ function MainWindow() {
                         {navName}
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                        <Dropdown.Item as={StyledLink} to="/home" onClick={() => setNavname("Home")}>Home</Dropdown.Item>
+                        <Dropdown.Item as={StyledLink} to="/" onClick={() => setNavname("Home")}>Home</Dropdown.Item>
                         <Dropdown.Item as={StyledLink} to="/my-projects" onClick={() => setNavname("My Projects")}>My Projects</Dropdown.Item>
                         <Dropdown.Item as={StyledLink} to="/contact-me" onClick={() => setNavname("Contact Me")}>Contact Me</Dropdown.Item>
                     </Dropdown.Menu>
@@ -46,9 +46,6 @@ function MainWindow() {
             
             <Switch>
                 <Route exact path="/">
-                    <Redirect to="/home"/>
-                </Route>
-                <Route exact path="/home">
                     <IndexPage />
                 </Route>
                 <Route path="/my-projects">
@@ -56,6 +53,9 @@ function MainWindow() {
                 </Route>
                 <Route path="/contact-me">
                     <ContactMe />
+                </Route>
+                <Route path='*'>
+                    <Redirect from='*' to='/' />
                 </Route>
             </Switch>
         </Router>
