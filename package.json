@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "http://maysentg.github.io/personal-portfolio",
+  "homepage": "http://maysengreenwood.me",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
