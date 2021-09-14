@@ -380,16 +380,16 @@ a {
   }
 
   .project__description--title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .project__description--sub-title {
-    font-size: 1rem;
-  }
-  .project__description--para {
     font-size: 0.8rem;
   }
+  .project__description--para {
+    font-size: 0.6rem;
+  }
   .icon {
-    height: 1.5rem;
+    height: 1.4rem;
   }
 }
 
