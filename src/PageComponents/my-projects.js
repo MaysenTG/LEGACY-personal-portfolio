@@ -14,15 +14,15 @@ import 'overlayscrollbars';
 function MyProjects() {
     return (
       <OverlayScrollbarsComponent>
-          <Tabs fill defaultActiveKey="websites" id="projects-tab" className="mb-3">
+          <Tabs fill defaultActiveKey="apps" id="projects-tab" className="mb-3">
+          <Tabs.Tab eventKey="apps" title="Apps">
+              <MyAppProjects />
+            </Tabs.Tab>
             <Tabs.Tab eventKey="websites" title="Websites">
               <MyWebsites />
             </Tabs.Tab>
             <Tabs.Tab eventKey="automation" title="Automation">
               <MyAutomation />
-            </Tabs.Tab>
-            <Tabs.Tab eventKey="apps" title="Apps">
-              <MyAppProjects />
             </Tabs.Tab>
           </Tabs>
       </OverlayScrollbarsComponent>

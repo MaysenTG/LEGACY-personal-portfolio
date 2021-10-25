@@ -1,5 +1,6 @@
 import CmpdIntrst from '../../media/compound interest app.png';
 import LiveWebEditor from '../../media/live-web-code-editor.png';
+import TodoApp from '../../media/ReactToDoApp.png';
 
 function MyAppProjects() {
     return (
@@ -42,6 +43,26 @@ function MyAppProjects() {
                                   <i class="icon fa-github-white"></i>
                               </a>
                               <a href="https://maysentg.github.io/live-web-code-editor/" rel="noreferrer" target="_blank" class="project__description--link">
+                                  <i class="icon fa-web-white"></i>
+                              </a>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="project">
+                      <div class="project__wrapper">
+                          <img src={TodoApp} class="project__img" alt="Compound interest web app. Shows graphically the effects of compound growth"/>
+                          <div class="project__description">
+                              <h3 class="project__description--title">Todo App using a Firebase DB</h3>
+                              <h4 class="project__description--sub-title">NodeJS, ReactJS, HTML, CSS, Firebase</h4>
+                              <p class="project__description--para">
+                                  This app implements a to do app in ReactJS utilizing CRUD on a Firebase DB
+                              </p>
+                              <div class="project__description--links">
+                              <a href="https://github.com/MaysenTG/react-todo-app" rel="noreferrer" target="_blank" class="project__description--link">
+                                  <i class="icon fa-github-white"></i>
+                              </a>
+                              <a href="https://maysentg.github.io/react-todo-app/" rel="noreferrer" target="_blank" class="project__description--link">
                                   <i class="icon fa-web-white"></i>
                               </a>
                               </div>
