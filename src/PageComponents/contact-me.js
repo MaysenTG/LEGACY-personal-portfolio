@@ -66,7 +66,7 @@ function ContactMe() {
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGroupPassword">
                 <Form.Label column="lg">Message</Form.Label>
-                <Form.Control onChange= {handleChange} as="textarea" name="message" placeholder="Enter a message" style={{height: '100px'}}/>
+                <Form.Control onChange= {handleChange} as="textarea" name="message" placeholder="Enter a message" style={{height: '100px', maxHeight: '250px'}}/>
               </Form.Group>
               <Button className="form__button" type="submit">Submit form</Button>
             </Form>
