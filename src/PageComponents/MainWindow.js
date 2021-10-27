@@ -24,6 +24,7 @@ const StyledLink = styled(Link)`
 `;
 
 function MainWindow() {
+    // eslint-disable-next-line
     const [navName, setNavname] = useState("Navigation");
         return (
             <Router>
