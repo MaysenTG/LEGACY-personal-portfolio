@@ -55,18 +55,18 @@ function ContactMe() {
         <main>
           <div class="contact__page">
             <h1 id="contact__title">Contact me!</h1>
-            <Form noValidate validated={validated} onSubmit={handleSubmit} className="contact__form">
+            <Form validated={validated} onSubmit={handleSubmit} className="contact__form">
               <Form.Group className="mb-3" controlId="formGroupEmail">
                 <Form.Label column="lg">Full Name</Form.Label>
-                <Form.Control onChange= {handleChange} type="name" name="fname" placeholder="Enter full name"/>
+                <Form.Control onChange= {handleChange} required type="name" name="fname" placeholder="Enter full name"/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGroupEmail">
                 <Form.Label column="lg">Email address</Form.Label>
-                <Form.Control onChange= {handleChange} type="email" name="email" placeholder="Enter email"/>
+                <Form.Control onChange= {handleChange} required type="email" name="email" placeholder="Enter email"/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGroupPassword">
                 <Form.Label column="lg">Message</Form.Label>
-                <Form.Control onChange= {handleChange} as="textarea" name="message" placeholder="Enter a message" style={{height: '100px', maxHeight: '250px'}}/>
+                <Form.Control onChange= {handleChange} as="textarea" required name="message" placeholder="Enter a message" style={{height: '100px', maxHeight: '250px'}}/>
               </Form.Group>
               <Button className="form__button" type="submit">Submit form</Button>
             </Form>
