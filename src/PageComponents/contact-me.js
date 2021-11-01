@@ -53,7 +53,7 @@ function ContactMe() {
     return (
       <>
         <main>
-          <div class="contact__page">
+          <div className="contact__page">
             <h1 id="contact__title">Contact me!</h1>
             <Form validated={validated} onSubmit={handleSubmit} className="contact__form">
               <Form.Group className="mb-3" controlId="formGroupEmail">

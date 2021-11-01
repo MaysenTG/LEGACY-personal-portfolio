@@ -1,4 +1,3 @@
-import SprMktPrice from "../../media/coding-photo-price-finder.webp";
 import "../../index";
 import { Component } from "react";
 import { LinearProgress } from "@mui/material";
@@ -10,21 +9,15 @@ class MyAutomation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: [
-        {
-          skills: "",
-          title: "",
-          description: "",
-          url: "",
-        },
-      ],
+      projects: [],
       loading: true,
     };
   }
   componentDidMount = async () => {
     const q = query(collection(projectFirestore, "automationProjects"));
+    // eslint-disable-next-line
     const querySnapshot = await getDocs(q);
-
+    
     onSnapshot(q, (querySnapshot) => {
       // doc.data() is never undefined for query doc snapshots
       //console.log(doc.id, " => ", doc.data());
@@ -39,28 +32,28 @@ class MyAutomation extends Component {
     const appProjects = this.state.projects;
 
     return (
-      <ul class="project__list">
+      <ul className="project__list">
         {appProjects.map((d) => {
           return (
-            <li key={d.id} class="project">
-              <div class="project__wrapper">
+            <li key={d.title} className="project">
+              <div className="project__wrapper">
                 <img
                   src={d.url}
-                  class="project__img"
+                  className="project__img"
                   alt="Car subscription project"
                 />
-                <div class="project__description">
-                  <h3 class="project__description--title">{d.title}</h3>
-                  <h4 class="project__description--sub-title">{d.skills}</h4>
-                  <p class="project__description--para">{d.description}</p>
-                  <div class="project__description--links">
+                <div className="project__description">
+                  <h3 className="project__description--title">{d.title}</h3>
+                  <h4 className="project__description--sub-title">{d.skills}</h4>
+                  <p className="project__description--para">{d.description}</p>
+                  <div className="project__description--links">
                     <a
                       href={d.githubRepo}
                       rel="noreferrer"
                       target="_blank"
-                      class="project__description--link"
+                      className="project__description--link"
                     >
-                      <i class="icon fa-github-white"></i>
+                      <i className="icon fa-github-white"></i>
                     </a>
 
                     {d.livePreview && (
@@ -68,9 +61,9 @@ class MyAutomation extends Component {
                         href={d.livePreview}
                         rel="noreferrer"
                         target="_blank"
-                        class="project__description--link"
+                        className="project__description--link"
                       >
-                        <i class="icon fa-web-white"></i>
+                        <i className="icon fa-web-white"></i>
                       </a>
                     )}
                   </div>
@@ -94,9 +87,9 @@ class MyAutomation extends Component {
     } else {
       return (
         <section id="projects">
-          <div class="projects__container">
-            <div class="row">
-              <h1 class="section__title">Automation projects</h1>
+          <div className="projects__container">
+            <div className="row">
+              <h1 className="section__title">Automation projects</h1>
               {this.createHTML()}
             </div>
           </div>
