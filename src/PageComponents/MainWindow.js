@@ -20,6 +20,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 const StyledLink = styled(Link)`
   border: none;
   width: inherit;
+  height: 100%;
   text-decoration: none;
 `;
 
@@ -30,9 +31,9 @@ function MainWindow() {
             <Router>
             <header>
                 <ul className="main-navigation">
-                    <li><StyledLink to="/"> <HomeIcon color="white"/> </StyledLink></li>
-                    <li><StyledLink to="/my-projects">Projects</StyledLink></li>
-                    <li><StyledLink to="/contact-me">Contact</StyledLink></li>
+                    <StyledLink to="/"><li><HomeIcon color="white"/></li> </StyledLink>
+                    <StyledLink to="/my-projects"><li>Projects</li></StyledLink>
+                    <StyledLink to="/contact-me"><li>Contact</li></StyledLink>
                 </ul>
     
                 
