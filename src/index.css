@@ -380,7 +380,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 545px) {
   #index-main {
     margin: 1rem !important;
   }
@@ -390,16 +390,16 @@ a {
   }
 
   .project__description--title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .project__description--sub-title {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .project__description--para {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .icon {
-    height: 1.4rem;
+    height: 1.3rem;
   }
   .project__description {
     left: 30px;
