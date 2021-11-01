@@ -15,7 +15,7 @@ code {
 /* Personal Website Styles */
 html {
   font-family: "Work Sans", sans-serif;
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
   max-width: 100%;
 }
@@ -54,6 +54,16 @@ li {
   height: 2rem;
 }
 
+.loading-container {
+  width: 80%;
+  margin: 10rem auto;
+  
+}
+
+.loading-container h1 {
+  text-align: center;
+}
+
 header {
   height: 5rem;
   width: inherit;
@@ -84,14 +94,16 @@ main {
 }
 
 .project {
-  margin-bottom: 135px;
+  margin-bottom: 120px;
   max-width: 40rem;
   display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .project__img {
   width: 100%;
-  max-width: 35rem;
+  max-width: 40rem;
   transition: all 500ms ease;
   margin: 0 auto;
 }
@@ -105,7 +117,6 @@ main {
 .row {
   margin: 0 auto;
   padding: 0 12px;
-  justify-content: space-between;
   display: flex;
 }
 
